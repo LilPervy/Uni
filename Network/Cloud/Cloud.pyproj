@@ -2,9 +2,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>0a3bbc89-e6ca-4ac8-bd77-b3edb2326174</ProjectGuid>
+    <ProjectGuid>bd9ad649-f9dc-4226-9b84-b03a70c1c1da</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Cloud.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +22,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Cloud.py" />
+    <Compile Include="mainClient.py" />
+    <Compile Include="mainServer.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
