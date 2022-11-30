@@ -5,7 +5,7 @@ if __name__ == "__main__":
     
     clientSocket = ClientConnection()
     
-    clientSocket.CreateConnection("192.168.42.123", 8080)
+    clientSocket.CreateConnection("127.0.0.1", 8080)
     
     handleConnection(clientSocket)
     clientSocket.close()

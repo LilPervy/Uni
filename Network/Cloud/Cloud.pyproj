@@ -4,8 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>bd9ad649-f9dc-4226-9b84-b03a70c1c1da</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>mainClient.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,8 +21,23 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="clientCore\ClientConnection.py" />
+    <Compile Include="clientCore\command.py" />
+    <Compile Include="clientCore\download.py" />
+    <Compile Include="clientCore\fileUpload.py" />
+    <Compile Include="clientCore\handleConnection.py" />
     <Compile Include="mainClient.py" />
     <Compile Include="mainServer.py" />
+    <Compile Include="serverCore\command.py" />
+    <Compile Include="serverCore\download.py" />
+    <Compile Include="serverCore\fileUpload.py" />
+    <Compile Include="serverCore\handleConnection.py" />
+    <Compile Include="serverCore\ServerConnection.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="clientCore\" />
+    <Folder Include="Document\" />
+    <Folder Include="serverCore\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
