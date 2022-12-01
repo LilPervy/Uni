@@ -51,7 +51,7 @@ class ClientConnection:
 
     def SendFile(self, filename, path):
         print("[+] Sending File")
-        filename = path
+        filename = path+filename
         with open(filename, "rb") as file:
             chunk = file.read(CHUNK_SIZE)
             while len(chunk) > 0:

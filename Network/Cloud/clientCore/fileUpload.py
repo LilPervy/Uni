@@ -17,7 +17,7 @@ def upload_files(socket):
             fileName = fileName[::-1]
             break
 
-
+    path = path.removesuffix(fileName)
     print("[+] Selected File: ", fileName)
     socket.SendData(fileName)
     socket.SendFile(fileName, path)
